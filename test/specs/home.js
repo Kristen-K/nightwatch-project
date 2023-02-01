@@ -31,13 +31,17 @@ describe("Home", () => {
     await browser.assert.urlContains('get-started');
   });
 
-  it("Click on logo button & assert URL contains does not contain get-started text", async () => {
+  it("Click on logo button & assert URL does not contain get-started text", async () => {
     await browser.navigateTo('/')
     // Click Logo 
     await browser.click('img[alt="Practice E-Commerce Site"]');
 
     //Assert url doesn't contain get-started text
     await browser.assert.not.urlContains('get-started');
+  });
+
+  it("Find heading element & assert the text", async () => {
+    await browser.assert.textEquals('.elementor-widget-container h1', 'Think different. Make different.');
   });
   
 });
