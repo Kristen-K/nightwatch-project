@@ -40,7 +40,8 @@ module.exports = {
   test_settings: {
     default: {
       disable_error_log: false,
-      launch_url: 'https://practice.automationbro.com',
+      launch_url: 'https://google.co.uk',
+      //'https://practice.automationbro.com',
       //'http://localhost',
 
       screenshots: {
