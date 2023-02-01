@@ -33,6 +33,12 @@ describe("Home", function() {
         .assert.not.urlContains('get-started')
 
     })
+    it("Find heading element & assert the text", async () => {
+        const homePage = browser.page.homePage()
+        homePage
+        .navigate()
+        .assert.textEquals('@txtHeading', 'Think different. Make different.')
+    })
 
     
 
