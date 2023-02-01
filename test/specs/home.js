@@ -1,5 +1,3 @@
-//import HomePage from '../pages/home-page';
-
 describe("Home", () => {
 
   it("Open URL & assert test", async () => {
