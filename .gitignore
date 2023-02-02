@@ -2,4 +2,8 @@ node_modules/
 logs/
 package-lock.json
 package.json
-nightwatch/
+nightwatch/custom-assertions
+nightwatch/custom-commands
+nightwatch/examples
+nightwatch/page-objects/google
+nightwatch/templates
