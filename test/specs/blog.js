@@ -7,10 +7,13 @@ describe('Get list of recent posts, check they are >10 characters & total of 5 p
         .expect.elements('@blogList').count.to.equal(5)
     
         const list = await browser.findElements('#recent-posts-3 ul li')
-        //console.log("here:", list)
+
         for (var i = 0; i < list.length; i++) {
             let items = await browser.getText(list[i])
-            console.log("here:", items )
+            if (items.length > 10) {
+                console.log("passed:: Post is over 10, number of characters:", items.length)
+            }
+            console.log("here:", items)
             
         }
     })
