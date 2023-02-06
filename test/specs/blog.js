@@ -1,3 +1,4 @@
+const { expect } = require('chai');
 
 describe('Get list of recent posts, check they are >10 characters & total of 5 posts', () => {
     it('Get list of recent posts', async () => {
@@ -8,13 +9,9 @@ describe('Get list of recent posts, check they are >10 characters & total of 5 p
     
         const list = await browser.findElements('#recent-posts-3 ul li')
 
-        for (var i = 0; i < list.length; i++) {
+        for (let i = 0; i < list.length; i++) {
             let items = await browser.getText(list[i])
-            if (items.length > 10) {
-                console.log("passed:: Post is over 10, number of characters:", items.length)
-            }
-            console.log("here:", items)
-            
+            expect(items).to.have.length.above(10);
         }
     })
 })
