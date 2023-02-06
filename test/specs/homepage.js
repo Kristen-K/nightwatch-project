@@ -13,7 +13,7 @@ describe("Home", function() {
   
     });
     it("Open About page & assert test", async () => {
-        const aboutPage = browser.navigateTo("https://practice.automationbro.com/about/");
+        const aboutPage = browser.navigateTo('/about/');
         aboutPage.assert.urlEquals('https://practice.automationbro.com/about/')
     });
     it("Click get started button & assert URL contains get-started text", async () => {
