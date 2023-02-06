@@ -1,11 +1,4 @@
-
-
 describe("Home", function() {
-
-    // before(function(browser) {
-    //     this.homepage = browser.page.homePage();
-    // })
-
     it("Open URL & assert test", async () => {
         const homePage = browser.page.homePage();
         homePage.navigate().assert.title('Practice E-Commerce Site – Automation Bro')
@@ -27,9 +20,7 @@ describe("Home", function() {
        const homePage = browser.page.homePage()
        homePage
        .navigate()
-       // not working
-       //.click('@imageLogo')
-        .click('img[alt="Practice E-Commerce Site"]')
+       .click('@imageLogo')
         .assert.not.urlContains('get-started')
 
     })
@@ -39,9 +30,6 @@ describe("Home", function() {
         .navigate()
         .assert.textEquals('@txtHeading', 'Think different. Make different.')
     })
-
-    
-
     
   });
 

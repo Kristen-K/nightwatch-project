@@ -8,7 +8,7 @@ module.exports = {
             selector: '#get-started'
         },
         imageLogo: {
-            selector: '//img[@alt="Practice E-Commerce Site"]'
+            selector: 'img[alt="Practice E-Commerce Site"]'
         },
         txtHeading: {
             selector: '.elementor-widget-container h1'
