@@ -1,8 +1,11 @@
 module.exports = {
     url: 'https://practice.automationbro.com/iframe-sample/', 
-    element: {
-        iframe: {
+    elements: {
+        frameElement:{
             selector: '#advanced_iframe'
+        },
+        siteLogo: {
+            selector:'#site-logo'
         }
     }
 }

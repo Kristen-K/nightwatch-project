@@ -5,9 +5,9 @@ describe('Iframe', () => {
         iframePage
         .navigate()
 
-        
+
         .assert.elementPresent(frameElement)
-        
+
         // access the iframe
          .frame(frameElement)
          .assert.elementPresent('#site-logo')
