@@ -7,3 +7,4 @@ nightwatch/custom-commands
 nightwatch/examples
 nightwatch/page-objects/google
 nightwatch/templates
+companies.js
